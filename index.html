@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div class="budget">
+        <div class="budget__value"></div>
+        <div class="budget__income">
+          <div class="budget__title">
+            Доходы
+            <span class="budget__income--value"></span>
+          </div>
+        </div>
+        <div class="budget__expenses">
+          <div class="budget__title">
+            Расходы
+            <span class="budget__expenses--value"></span>
+          </div>
+          <div class="budget__expenses--percentage"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="add">
+        <select class="add__type">
+          <option value="inc"> Доходы </option>
+          <option value="exp"> Расходы </option>
+        </select>
+        <input class="add__description" type="text" />
+        <input class="add__value" type="number" />
+        <button class="add__btn">Click me</button>
+      </div>
+      <div class="wrapper">
+        <div class="incomes">
+          <div class="incomes__title">Доходы</div>
+          <div class="incomes__list"></div>
+        </div>
+        <div class="expenses">
+          <div class="expenses__title">Расходы</div>
+          <div class="expenses__list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
